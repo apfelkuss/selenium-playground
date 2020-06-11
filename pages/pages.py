@@ -82,7 +82,6 @@ class UserPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
         self.logged_in = True
-#        self.driver.implicitly_wait(10)
 
     def log_off(self):
         my_ozon = self.driver.find_element(*baseloc.MY_OZON)
